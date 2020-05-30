@@ -27,5 +27,5 @@ public interface OrderRepository extends PagingAndSortingRepository<Order, Integ
                                            @DateTimeFormat(pattern = "yyyy-MM-dd")
                                                    Date orderDateGreater, Pageable pageable);
 
-    List<Order> findByStoreNameContains(@Param("name")String name);
+    List<Order> findByStoreNameContains(@Param("storeName")String storeName);
 }
